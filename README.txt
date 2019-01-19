@@ -1,9 +1,13 @@
-$ ./radiko.sh -p BAYFM78
-で聞くことができた。このBAYFM78みたいなキー（文字列）は、radiko.jpの各ラジオ局のページのURLで確認できる。w3mとか使えばサーバーでもok。
+我が家のUbuntuでは音声をrootではないと出力できないのでrootで実行
+$ sudo apt-get install rtmpdump swftools libxml2-utils mplayer
+$ ./radiko -p BAYFM78
+このBAYFM78みたいなキー（文字列）は、radiko.jpの各ラジオ局のページのURLで確認できる。w3mとか使えばサーバーでもok。
 
 自分で各ラジオ局のキーをまとめてみたら以下のようになった。
 
 ラジオ局	キー
+802	802
+FMCOCOLO	CCL
 NHK第1	JOAK
 NHK第2	JOAB
 NHK FM	JOAK-FM
@@ -23,3 +27,4 @@ InterFM	INT
 もしバッググラウンドで動かしたいなら以下のように。
 
 https://qiita.com/onokatio/items/86755bb3083e414f1a3a
+https://mtunn.wordpress.com/2017/02/08/raspberrypi3%E3%81%A7radiko/
